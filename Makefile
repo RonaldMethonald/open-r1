@@ -12,7 +12,7 @@ install:
 	uv pip install vllm==0.8.4
 	uv pip install setuptools
 	uv pip install flash-attn --no-build-isolation
-	GIT_LFS_SKIP_SMUDGE=1 uv pip install -e ".[dev]"
+	GIT_LFS_SKIP_SMUDGE=1 uv pip install -e ".[   dev]"
 
 style:
 	ruff format --line-length 119 --target-version py310 $(check_dirs) setup.py
